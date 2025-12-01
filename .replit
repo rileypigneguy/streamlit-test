@@ -11,8 +11,12 @@ language = "python3"
 requiredFiles = [".replit", "replit.nix"]
 
 [deployment]
-run = ["python3", "main.py"]
+run = ["streamlit", "run", "main.py"]
 deploymentTarget = "cloudrun"
 
 [agent]
 expertMode = true
+
+[[ports]]
+localPort = 8501
+externalPort = 80
