@@ -1,6 +1,5 @@
 import streamlit as st
 from utils import menu
 
-# setup sidebar
 menu()
-st.write("hello world")
+st.write("This is the bio page")
